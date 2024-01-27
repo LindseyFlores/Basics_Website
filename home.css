@@ -1,0 +1,28 @@
+body{
+    background-color: aliceblue;
+}
+nav{
+    background-color: yellow;
+}
+#carousel{
+    background-image: url(images/spiderman.webp);
+    height: 400px;
+}
+#trendy{
+    background-color: pink;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.trendyPics{
+    background-color: white;
+    border-style: solid;
+    height: 80%;
+    width: 40%;
+}
+
+footer{
+    background-color: gray;
+    height: 200px;
+}
