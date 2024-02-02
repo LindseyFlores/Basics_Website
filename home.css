@@ -62,7 +62,25 @@ body {
     transform: translateY(-10px); 
   }
 
-footer {
+  footer {
     background-color: gray;
+    color: white;
+    font-size: 12pt;
     height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+h3 {
+    color: black;
+    text-align: center;
+}
+.column1 {
+    padding: 14px;
+}
+.column2 {
+    padding: 14px;
+}
+.column3 {
+    padding: 70px;
+    font-family: monospace;
 }
