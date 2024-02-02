@@ -1,10 +1,30 @@
-body {
-    background-color: #121212;
+body{
+    background-color: black;
 }
-
-nav {
-    background-color: yellow;
+.navigation {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;   
 }
+.navigation a {
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.navigation a:hover {
+color: black;
+background-color: white;
+}
+#brand {
+    padding-top: 14px;
+}
+.products {
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+.search-bar {
+    padding: 14px;
 
 #carousel {
     /**background-image: url(images/spiderman.webp);**/
