@@ -25,26 +25,29 @@ background-color: white;
 }
 .search-bar {
     padding: 14px;
+
+#carousel {
+    /**background-image: url(images/spiderman.webp);**/
+    background-color: #717171;
+    height: 850px;
 }
-#carousel{
-    background-image: url(images/spiderman.webp);
-    height: 400px;
-}
-#trendy{
-    background-color: pink;
-    height: 500px;
+
+#trendy {
+    background-color: #121212;
+    height: 700px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.trendyPics{
+
+.trendyPics {
     background-color: white;
     border-style: solid;
-    height: 80%;
+    height: 90%;
     width: 40%;
 }
 
-footer{
+footer {
     background-color: gray;
     height: 200px;
 }
