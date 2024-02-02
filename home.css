@@ -1,51 +1,66 @@
-body{
+body {
     background-color: black;
 }
+
 .navigation {
     background-color: black;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
+
 .navigation a {
     color: white;
     padding: 14px;
     font-size: 16px;
     text-decoration: none;
 }
+
 .navigation a:hover {
-color: black;
-background-color: white;
+    color: black;
+    background-color: white;
 }
+
 #brand {
     padding-top: 14px;
 }
+
 .products {
     padding-bottom: 14px;
     padding-top: 14px;
 }
+
 .search-bar {
     padding: 14px;
+}
 
 #carousel {
-    /**background-image: url(images/spiderman.webp);**/
     background-color: #717171;
-    height: 850px;
+    height: 800px;
 }
 
 #trendy {
     background-color: #121212;
     height: 700px;
+    padding: 30px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.hover-up-image:hover {
+    transform: translateY(-10px);
 }
 
 .trendyPics {
     background-color: white;
     border-style: solid;
-    height: 90%;
-    width: 40%;
+    height: 100%;  width: 40%;
+
 }
+.hover-up-image:hover {
+    transform: translateY(-10px); 
+  }
 
 footer {
     background-color: gray;
