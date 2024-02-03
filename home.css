@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .navigation {
@@ -21,6 +22,7 @@ body {
 }
 
 #brand {
+    font-family: "Fjalla One", sans-serif;
     padding-top: 14px;
 }
 
@@ -70,7 +72,7 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
-h3 {
+h4 {
     color: black;
     text-align: center;
 }
