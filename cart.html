@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla One">
     <link rel="stylesheet" href="cart.css">
-    <title>basics.</title>
+    <title> your cart </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
@@ -28,11 +28,73 @@
 </nav>
 
 <body>
-<section id="backBox">
-    <div class="yourShoppingCart">
+<main id="backBox">
+    <section id="yourShoppingCart">
+        <h1> Your Shopping Cart </h1>
+    </section>
 
-    </div>
-</section>
+    <section id ="itemBackground">
+        <section id = "itemSection">
+
+            <div class="cartItem">
+                <div class="imageItem">
+                    <img src ="images/outwear.png" width="100%" height="100%" >
+                </div>
+
+                <div class="itemInfo">
+                    <div class="nameAndRemove">
+                        <p class> ITEM NAME: T-shirt </p>
+                        <button type="button" class="remAndQuan"> remove </button>
+                    </div>
+                        <p> COLOR: </p>
+                    <div class="sizeAndQuantity">
+                        <p> SIZE: </p>
+                        <button type="button" class="remAndQuan"> Quantity </button>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="cartItem">
+                <div class="imageItem">
+                    <img src ="images/outwear.png" width="100%" height="100%" >
+                </div>
+
+                <div class="itemInfo">
+                    <div class="nameAndRemove">
+                        <p class> ITEM NAME: T-shirt </p>
+                        <button type="button" class="remAndQuan"> remove </button>
+                    </div>
+                        <p> COLOR: </p>
+                    <div class="sizeAndQuantity">
+                        <p> SIZE: </p>
+                        <button type="button" class="remAndQuan"> Quantity </button>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section id = "orderSection">
+
+            <div id="top">   
+                <h2>Order Summary</h2>
+            </div>
+
+            <div id="orderSummaryInfo">
+                <p>Item in Cart:</p>
+                <p>Item in Cart:</p>
+                <hr>
+                <p>Shipping:</p>
+                <p>Delivery Fee:</p>
+                <p>Tax: </p>
+                <hr>
+                <p>Total:</p>
+            </div>
+            <div class="bottom">
+            <button type="button" class="checkoutButton"> Proceed To Checkout </button>
+            </div>
+        </section>
+    </section>
+</main>
 </body>
 
 </html>
