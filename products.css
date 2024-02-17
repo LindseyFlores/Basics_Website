@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.navigation {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation a {
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: black;
+    background-color: white;
+}
+
+#brand {
+    font-family: "Fjalla One", sans-serif;
+    padding-top: 14px;
+}
+
+.products {
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+
+.search-bar {
+    padding: 14px;
+}
+#products {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    color: white;
+}
+#products #rec1{
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+}
+#products #rec1 #box1 {
+    background-color: white;
+    height: 80%;
+    width: 20%;
+}
+#products #rec1 #box1 img{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+#products #rec1 #box2 {
+    background-color: white;
+    height: 80%;
+    width: 20%;
+}
+#products #rec1 #box2 img{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+#products #rec1 #box3 {
+    background-color: white;
+    height: 80%;
+    width: 20%;
+}
+#products #rec1 #box3 img{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+#products #rec1 #box4 {
+    background-color: white;
+    height: 80%;
+    width: 20%;
+}
+#products #rec1 #box4 img{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+#products #rec2 {
+    height:450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#products #rec2 #box1 {
+    background-color: white;
+    height: 80%;
+    width: 20%;
+}
+#products #rec2 #box1 img{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+#products #rec2 #box2 {
+    background-color: white;
+    height: 80%;
+    width: 20%;
+}
+#products #rec2 #box2 img{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+#products #rec2 #box3 {
+    background-color: white;
+    height: 80%;
+    width: 20%;
+}
+#products #rec2 #box3 img{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+#products #rec2 #box4 {
+    background-color: white;
+    height: 80%;
+    width: 20%;
+}
+#products #rec2 #box4 img{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
