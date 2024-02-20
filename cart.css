@@ -86,12 +86,13 @@ img{
     justify-content: space-between;
     margin: 0px;
 }
-
+.buttonSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .remAndQuan{
     border-radius: 20px;
-    height: 25%; width:25%;
-    margin-top: 10px;
-
 }
 #orderSection{
     background-color: #a6a6a6;
