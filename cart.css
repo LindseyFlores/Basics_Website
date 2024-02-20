@@ -71,8 +71,10 @@ body {
 .imageItem{
     border-style: solid;
     border-radius: 20px;
+    height: 100%; width: 30%;
     
 }
+
 img{
     border-radius: 20px;
 }
