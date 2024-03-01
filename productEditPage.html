@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla One">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Edit Page</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<nav class="dropdown">
+        <button class="dropbtn"> Menu</button>
+        <div class="dropdownContent">
+          <a href="bulkUpload.html"> Bulk Upload </a>
+          <a href="bulkUpload.html"> Product Upload </a>
+          <!-- This needs to be changed in the future to actually sign user out -->
+          <a href="homepage.html"> SignOut </a>
+        </div>
+
+        <div> <h1> Welcome Admin User </h1> </div>
+</nav>
+<body>
+    <main class="productMain">
+        <h1>Product Edit Page</h1>
+        <div class="product-list">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search">
+            <ul>
+                <!-- Hypothetical of products fetched from the database -->
+                <li>Product 1</li>
+                <li>Product 2</li>
+            </ul>
+        </div>
+        <div>
+            <!-- Form for editing product details -->
+            <form action="edit_product_handler.php" method="post" class="editingProducts">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"></textarea>
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                    <!-- We can add More categories -->
+                </select>
+                <label for="image">Image Path:</label>
+                <input type="text" id="image" name="image">
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price">
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
