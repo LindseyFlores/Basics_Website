@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Winter Collection</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Fjalla One"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla One" />
     <link rel="stylesheet" href="products.css" />
-  </head>
-  <nav class="navigation">
+</head>
+<nav class="navigation">
     <div id="brand"><a href="homepage.html">basics.</a></div>
     <div class="products">
         <a href="spring.html">Spring Collection</a>
@@ -26,55 +21,31 @@
         <button type="go">Submit</button>
     </div>
 </nav>
-  <body>
-    <section id = products>
-        <div id = rec1>
-            <div id = box1>
-                <a href="details.html"><img src="../images/ 1.png"></a>
-                <p>basics. puffer jacket</p>
-                <p>169.00 USD</p>
-            </div>
-            
-            <div id = box2>
-                <a href="details.html"><img src="../images/vest 1.png"></a>
-                <p>basics. puffer vest</p>
-                <p>69.00 USD</p>
-            </div>
-            <div id = box3>
-                <a href="details.html"><img src="../images/wool 1.png"></a>
-                <p>basics. wool jacket</p>
-                <p>169.00 USD</p>
-            </div>
-            <div id = box4>
-                <a href="details.html"><img src="../images/collar 1.png"></a>
-                <p>basics. collar jacket</p>
-                <p>109.00 USD</p>
-            </div>
-        </div>
-        <div id = rec2>
 
-            <div id = box1>
-                <a href="details.html"><img src="../images/coat 1.png"></a>
-                <p>basics. wool coat</p>
-                <p>159.00 USD</p>
-            </div>
-            <div id = box2>
-                <a href="details.html"><img src="./images/scarf 1.png"></a>
-                <p>basics. scarf</p>
-                <p>35.00 USD</p>
-            </div>
-            <div id = box3>
-                <a href="details.html"><img src="./images/beanie 1.png"></a>
-                <p>basics. beanie</p>
-                <p>22.00 USD</p>
-            </div>
-            <div id = box4>
-                <a href="details.html"><img src="../images/boots 1.png"></a>
-                <p>basics. quilted boots</p>
-                <p>119.00 USD</p>
-            </div>
-        </div>
+<body>
+    <section id=products>
+        <!--For thunderclient use: atleast for macs, because http://localhost:3000 doesn't work
+            http://[::1]:3000/api/products -->
+
+        <!-- Products will be rendered here dynamically -->
+        <script>
+            fetch('/api/products')
+                .then(response => response.json())
+                .then(products => {
+                    const productsSection = document.getElementById('products');
+                    products.forEach(product => {
+                        productsSection.innerHTML += `
+                    <div>
+                      <a href="details.html"><img src="${product.imageUrl}"></a>
+                      <p>${product.name}</p>
+                      <p>${product.price}</p>
+                    </div>
+                  `;
+                    });
+                })
+                .catch(error => console.error ('Error fetching products', error));
+        </script>
     </section>
+</body>
 
-  </body>
 </html>

@@ -96,6 +96,44 @@
                 </div>
             </section>
         </section>
+        <script>
+            // Fetch cart data from server
+            fetch('/api/cart')
+              .then(response => response.json())
+              .then(data => {
+                const itemSection = document.getElementById('itemSection');
+                itemSection.innerHTML = ''; // Clear existing cart items
+                data.items.forEach(item => {
+                  itemSection.innerHTML += `
+                    <div class="cartItem">
+                        <div class="imageItem">
+                            <img src="images/${item.name.toLowerCase().replace(/\s+/g, '-')}.png" width="100%" height="100%">
+                        </div>
+                        <div class="itemInfo">
+                            <p>ITEM NAME: ${item.name}</p>
+                            <p>PRICE: $${item.price.toFixed(2)}</p>
+                            <p>QUANTITY: ${item.quantity}</p>
+                        </div>
+                    </div>
+                  `;
+                });
+                // Update order summary
+                const orderSummaryInfo = document.getElementById('orderSummaryInfo');
+                orderSummaryInfo.innerHTML = `
+                    <div>
+                        <p>Subtotal: $${data.totals.subtotal.toFixed(2)}</p>
+                        <p>Delivery Fee: $${data.totals.delivery.toFixed(2)}</p>
+                        <p>Tax: $${data.totals.tax.toFixed(2)}</p>
+                        <hr>
+                        <p>Total: $${data.totals.total.toFixed(2)}</p>
+                    </div>
+                `;
+              })
+              .catch(error => console.error('Error fetching cart data:', error));
+            
+            // Event listeners for buttons need to be added for (Add, remove)
+            
+            </script>
     </main>
 </body>
 

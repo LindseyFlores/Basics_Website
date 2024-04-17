@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla One">
@@ -11,14 +12,14 @@
 <nav class="dropdown">
     <button class="dropbtn"> Menu</button>
     <div class="dropdownContent">
-      <a href="bulkUpload.html"> Bulk Upload </a>
-      <!-- This needs to be changed in the future to actually sign user out -->
-      <a href="homepage.html"> SignOut </a>
+        <a href="bulkUpload.html"> Bulk Upload </a>
+        <!-- This needs to be changed in the future to actually sign user out -->
+        <a href="homepage.html"> SignOut </a>
     </div>
 </nav>
 
 <body>
-    <main class ="bulkMain">
+    <main class="bulkMain">
         <h1>Upload you files here </h1>
         <form action="upload_handler.php" method="post" enctype="multipart/form-data">
             <label for="file">Select File:</label>
@@ -28,4 +29,5 @@
         <p>Example file format: JSON, CSV, or Text</p>
     </main>
 </body>
+
 </html>
