@@ -11,6 +11,7 @@ router.get('/products', (req, res) => {
     // Add more products as needed
   ]);
 });
+
 //Stub for getting a single product
 router.get('/products/:id', (req, res) => {
     console.log(`Request for product ID: ${req.params.id}`);
@@ -26,7 +27,6 @@ router.get('/products/:id', (req, res) => {
   });
   
 
-//For thunderclient use: atleast for macs, because http://localhost:3000 doesn't work
-//http://[::1]:3000/api/products
+
 
 module.exports = router;

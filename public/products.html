@@ -24,10 +24,6 @@
 
 <body>
     <section id=products>
-        <!--For thunderclient use: atleast for macs, because http://localhost:3000 doesn't work
-            http://[::1]:3000/api/products -->
-
-        <!-- Products will be rendered here dynamically -->
         <script>
             fetch('/api/products')
                 .then(response => response.json())
