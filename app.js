@@ -1,24 +1,28 @@
-const express = require('express');
-const productRoutes = require('./routes/productRoutes');
-const cartRoutes = require('./routes/cartRoutes');
-const app = express();
-const PORT = 3000;
+"use strict";
+const express = require('express')
+const app = express()
 
-app.use(express.static('public'));
-app.use('/api', productRoutes);
-app.use('/api', cartRoutes);
+const multer = require("multer")
+app.use(multer().none())
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+const menuRouter = require("./routes/menu.route");
+const cartRouter = require("./routes/cart.route")
+const userRouter = require("./routes/user.route");
 
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:3000`));
+
+app.get('/', (req, res ) => {
+    res.json({message: "hello"});
+});
+
+app.use("/menu", menuRouter);
+app.use("/cart", cartRouter)
+app.use("/users", userRouter);
 
 
-// const express = require('express');
-// const app = express();
-
-// app.listen(3000, () => {
-//   console.log('Server is running on http://localhost:3000');
-// });
-
-// app.get('/', (req, res) => {
-//   res.send('are we cooking?');
-// });
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log("App listening at http://localhost:" + PORT);
+});

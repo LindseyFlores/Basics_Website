@@ -63,32 +63,7 @@
                 </p>
             </div>
         </div>
-        <script>
-            // Fetch product details
-            //this might not display properly fixing this in the future
-            // This assumes product ID is known;
-            const productId = '1';
-            
-            fetch(`/api/products/${productId}`)
-              .then(response => response.json())
-              .then(product => {
-                document.getElementById('box3').innerHTML = `<img src="${product.images[0]}">`;
-                document.getElementById('box5').innerHTML = `<img src="${product.images[1]}">`;
-                document.getElementById('box6').innerHTML = `<img src="${product.images[2]}">`;
-                document.getElementById('box2').innerHTML = `
-                  <p>
-                    ${product.name}</br>
-                    ${product.price}</br></br>
-                    Color: ${product.color}</br></br>
-                    Sizes:</br>
-                    ${product.sizes.join(' ')}
-                  </p>
-                  <u>Size Guide</u> 
-                  <u id="cart">Add to Cart</u>
-                `;
-              })
-              .catch(error => console.error('Error fetching product details:', error));
-          </script>
+        
           
     </section>
 </body>

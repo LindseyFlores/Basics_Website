@@ -24,23 +24,7 @@
 
 <body>
     <section id=products>
-        <script>
-            fetch('/api/products')
-                .then(response => response.json())
-                .then(products => {
-                    const productsSection = document.getElementById('products');
-                    products.forEach(product => {
-                        productsSection.innerHTML += `
-                    <div>
-                      <a href="details.html"><img src="${product.imageUrl}"></a>
-                      <p>${product.name}</p>
-                      <p>${product.price}</p>
-                    </div>
-                  `;
-                    });
-                })
-                .catch(error => console.error ('Error fetching products', error));
-        </script>
+        
     </section>
 </body>
 
