@@ -7,9 +7,8 @@ app.use(multer().none())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const menuRouter = require("./routes/menu.route");
 const cartRouter = require("./routes/cart.route")
-const userRouter = require("./routes/user.route");
+const productRouter = require("./routes/product.route");
 
 
 
@@ -17,9 +16,8 @@ app.get('/', (req, res ) => {
     res.json({message: "hello"});
 });
 
-app.use("/menu", menuRouter);
 app.use("/cart", cartRouter)
-app.use("/users", userRouter);
+app.use("/product", productRouter);
 
 
 const PORT = process.env.PORT || 8000;
