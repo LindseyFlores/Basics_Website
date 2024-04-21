@@ -1,23 +1,24 @@
 "use strict";
 
-const sqlite = require("better-sqlite3");
-const path = require("path");
-const db = new sqlite(path.resolve("database.db"), { fileMustExist: true });
+const sqlite3 = require('better-sqlite3');
+const db = new sqlite3('./database.db'); //route to our database
 
-function all(sql, ...params) {
-  return db.prepare(sql).all(params);
-}
+module.exports = db;
 
-function get(sql, ...params) {
-  return db.prepare(sql).get(params);
-}
+// function all(sql, ...params) {
+//   return db.prepare(sql).all(params);
+// }
 
-function run(sql, ...params) {
-  return db.prepare(sql).run(params[0]);
-}
+// function get(sql, ...params) {
+//   return db.prepare(sql).get(params);
+// }
 
-module.exports = {
-  all,
-  get,
-  run,
-};
+// function run(sql, ...params) {
+//   return db.prepare(sql).run(params[0]);
+// }
+
+// module.exports = {
+//   all,
+//   get,
+//   run,
+// };
