@@ -1,12 +1,3 @@
-CREATE TABLE IF NOT EXISTS "products" (
-        "id" INTEGER PRIMARY KEY AUTOINCREMENT,
-        "category" TEXT NOT NULL,
-        "name" TEXT NOT NULL,
-        "price" REAL NOT NULL,
-        "description" TEXT,
-        "image" TEXT
-
-);
 CREATE TABLE IF NOT EXISTS "cart_Products" (
         "cart_product_id"   INTEGER, 
         "cart_id"   INTEGER NOT NULL,
@@ -30,6 +21,15 @@ CREATE TABLE IF NOT EXISTS "categories" (
         "name"   TEXT,
         "display_order"    INTEGER,
         PRIMARY KEY("category_id" AUTOINCREMENT)
+
+);
+CREATE TABLE IF NOT EXISTS "products" (
+        "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+        "category" TEXT NOT NULL,
+        "name" TEXT NOT NULL,
+        "price" REAL NOT NULL,
+        "description" TEXT NOT NULL,
+        "image" TEXT NOT NULL
 
 );
 CREATE TABLE IF NOT EXISTS "users" (
