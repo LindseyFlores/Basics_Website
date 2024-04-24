@@ -1,11 +1,11 @@
 const db = require('./db-conn');
 
 exports.bulkInsertProducts = (products) => {
-    const insert = db.prepare(`INSERT INTO products (category, name, price, description, image) VALUES (?, ?, ?, ?, ?)`);
+    const insert = db.prepare(`INSERT INTO products (category, name, price, description, image, size) VALUES (?, ?, ?, ?, ?,?)`);
     const insertMany = db.transaction((products) => {
         try {
             for (const product of products) {
-                insert.run(product.category, product.name, parseFloat(product.price), product.description, product.image);
+                insert.run(product.category, product.name, parseFloat(product.price), product.description, product.image, product.size);
             }
         } catch (error) {
             console.error("Failed to insert products:", error);

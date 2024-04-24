@@ -29,7 +29,8 @@ CREATE TABLE IF NOT EXISTS "products" (
         "name" TEXT NOT NULL,
         "price" REAL NOT NULL,
         "description" TEXT NOT NULL,
-        "image" TEXT NOT NULL
+        "image" TEXT NOT NULL,
+        "size"	TEXT NOT NULL
 
 );
 CREATE TABLE IF NOT EXISTS "users" (
