@@ -27,22 +27,3 @@ exports.bulkUpload = async (req, res) => {
         }
     }
 };
-
-
-
-// exports.bulkUpload = async (req, res) => {
-//     try {
-//         const fileData = fs.readFileSync(req.file.path);
-//         const json = JSON.parse(fileData);
-//         if (json.products && Array.isArray(json.products)) {
-//             await productsModel.bulkInsertProducts(json.products);
-//             res.send('Products uploaded successfully');
-//         } else {
-//             res.status(400).send('Invalid file format');
-//         }
-//     } catch (err) {
-//         res.status(500).send('Error processing your request');
-//     } finally {
-//         fs.unlinkSync(req.file.path); // Clean up uploaded file
-//     }
-// };
