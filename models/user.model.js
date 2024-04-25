@@ -1,5 +1,5 @@
-// "use strict";
-// const db = require("../models/db-conn");
+"use strict";
+const db = require("../models/db-conn");
 
 function findUserByEmail(email) {
   const select = db.prepare('SELECT * FROM users WHERE user_email = ?;');
