@@ -1,19 +1,18 @@
 // "use strict";
 // const db = require("../models/db-conn");
 
-// function getAllUsers() {
-//   let sql = "SELECT * FROM users;";
-//   const data = db.all(sql);
-//   return data;
-// }
+function findUserByEmail(email) {
+  const select = db.prepare('SELECT * FROM users WHERE user_email = ?;');
+  const user = select.get(email);
+  return user;
+}
+function createUser(email, password) {
+  const insert = db.prepare('INSERT INTO users (user_email, user_password) VALUES (?,?);');
+  const result = insert.run(email, password);
+  return result;
+}
 
-// function getUserById(id) {
-//   let sql = "SELECT * FROM users WHERE id =? ;";
-//   const item = db.get(sql, id);
-//   return item;
-// }
-
-// module.exports = {
-//   getAllUsers,
-//   getUserById,
-// };
+module.exports = {
+  createUser,
+  findUserByEmail
+};
