@@ -66,12 +66,26 @@ body {
   align-items: center;
   padding-bottom: 120px;
 }
+#more {
+  font-size: 20px;
+}
 
 #more-info {
   width: 30%;
-  background-color: white;
+  color: white;
   padding: 20px; 
   text-align: center; 
+  font-size: 24px;
+}
+#more-info #text-1{
+
+  font-size: 60px;
+}
+#subtitle2 {
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  padding-bottom: 50px;
 }
 
 .trendy {

@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    font-family:"Barlow Semi Condensed", sans-serif;
+    color: balck;
+  }
+  .forms {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    border-radius: 30px;
+  }
+  .loginForm {
+    padding: 60px;
+  }
+  .registerForm{
+    padding: 60px;
+  }
+  input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  input:placeholder-shown {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    text-align: center;
+  }
+  button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14pt;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+  #forgot {
+    color: rgb(192, 192, 192);
+  }

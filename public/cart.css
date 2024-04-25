@@ -1,11 +1,9 @@
 body {
     background-color: black;
     font-family: "Barlow Semi Condensed", sans-serif;
-    margin:0;
-    height:100%;
-    width:100%;
-    padding:0;
+    color: white;
 }
+
 .navigation {
     background-color: black;
     display: flex;
@@ -17,7 +15,6 @@ body {
     padding: 14px;
     font-size: 16px;
     text-decoration: none;
-    
 }
 
 .navigation a:hover {
@@ -25,94 +22,145 @@ body {
     background-color: white;
 }
 
-#backBox{
-    background-color: #737373;
-    border-style: solid;
-    border-radius: 15px;
-    margin-top: 50px; margin-left: 50px; margin-right: 50px;
-    height : 100vh;
-    padding: 20px;
+#brand {
+    font-family: "Fjalla One", sans-serif;
+    padding-top: 14px;
 }
 
-#yourShoppingCart{
-    background-color: #a6a6a6;
-    border-style: solid;
-    border-radius: 15px;
+.products {
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.shopping-cart {
+    height: auto;
+    overflow: auto;
+    padding: 10px;
+    margin: 10px;
     display: flex;
-    justify-content: center;
-    font-size: large;
+    justify-content: space-between;
+
 }
 
-#itemBackground{
-    background-color: #737373;
-    height : 90vh;
-    margin-top: 20px;
+.product-text {
+    color: white;
+    padding-left: 20px;
+}
+
+.shopping-cart .details {
+
+    width: 55%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.shopping-cart .details .productDetails {
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
+    font-size: 18pt;
 }
 
-#itemSection{
-    background-color: #737373;
-    height: 90%; width: 50%;
-    margin-right: 30px; margin-left: 30px;
+.productImage {
+    width: 15%;
+    height: 120px;
+    background-color: white;
+}
+
+.productImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.productInfo {
+    width: 40%;
+    height: 120px;
+
+}
+
+.quantity {
+    width: 20%;
+    height: 120px;
+}
+
+.quantity-button {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.productPrice {
+    width: 15%;
+    height: 120px;
+
+    text-align: center;
+}
+
+.order-summary {
+    width: 35%;
+    background-color: white;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
 }
-.cartItem{
-    background-color: #a6a6a6;
-    height: 30%;
-    margin-top: 10px;
-    border-style: solid;
-    border-radius: 20px;
-    display: flex;
-    padding: 10px;
-}
-.imageItem{
-    border-style: solid;
-    border-radius: 20px;
-    height: 100%; width: 30%;
-    
+
+.total {
+    width: auto;
+    height: 100%;
+    padding: 40px;
+    font-size: 20pt;
+    color: black;
 }
 
-img{
-    border-radius: 20px;
+#summary {
+    color: black;
+    text-align: center;
 }
-.itemInfo{
-    margin-left: 20px;
-    width: 60%;
+
+#title {
+    padding-left: 20px;
 }
-.nameAndRemove,
-.sizeAndQuantity{
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
+
+.checkout-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 20pt;
 }
-.buttonSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.checkout-button:hover {
+    background-color: lightgray;
 }
-.remAndQuan{
-    border-radius: 20px;
-}
-#orderSection{
-    background-color: #a6a6a6;
-    height: 90%; width: 50%;
-    margin-right: 30px; margin-left: 30px; margin-top: 15px;
-    border-radius: 20px;
-}
-#top{
-    display: flex;
-    justify-content: center;
-}
-#orderSummaryInfo{
-    /*border-style: solid; border-radius: 20px;*/
-    margin-left: 10px;  margin-right : 10px;
-}
-.bottom{
-    display: flex;
-    justify-content: end;
-    margin-right: 10px;
-    border-radius: 20px;
+
+button {
+    align-self: center;
 }
