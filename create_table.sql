@@ -16,13 +16,6 @@ CREATE TABLE IF NOT EXISTS "cart" (
         FOREIGN KEY("user_id")REFERENCES "users"("user_id")
 
 );
-CREATE TABLE IF NOT EXISTS "categories" (
-        "category_id"   INTEGER NOT NULL UNIQUE, 
-        "name"   TEXT,
-        "display_order"    INTEGER,
-        PRIMARY KEY("category_id" AUTOINCREMENT)
-
-);
 CREATE TABLE IF NOT EXISTS "products" (
         "id" INTEGER PRIMARY KEY AUTOINCREMENT,
         "category" TEXT NOT NULL,
