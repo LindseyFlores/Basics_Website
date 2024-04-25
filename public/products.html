@@ -14,60 +14,65 @@
         <a href="reviews.html">Reviews</a>
         <a href="reach_out.html">Reach Out</a>
     </div>
-   
+
     <a href="cart.html">Shopping Cart</a>
 </nav>
 
 <body>
     <section id=products>
-        <select name="category" id="category"> <!--category is drop down-->
-            <option value="spring">spring</option>
-            <option value="summer">summer</option>
-            <option value="winter">winter</option>
-            <option value="fall">fall</option>
-        </select>
-        <div id = rec1>
-            <div id = box1>
-                <a href="details.html"><img src="../images/puffer 1.png"></a> <!--img src= this should be filled with "img" section of the database table-->
+        <div class="drop-down">
+            <button class="dropdown-button">Select Category</button>
+            <select name="category" id="category" class="drop-drown-content"> <!--category is drop down-->
+                <option value="spring">spring</option>
+                <option value="summer">summer</option>
+                <option value="winter">winter</option>
+                <option value="fall">fall</option>
+            </select>
+        </div>
+
+        <div id=rec1>
+            <div id=box1>
+                <a href="details.html"><img src="../images/puffer 1.png"></a>
+                <!--img src= this should be filled with "img" section of the database table-->
                 <p class="name">basics. puffer jacket</p> <!--s-->
-                <p class="price ">169.00</p>            <!--Price: int--> 
-                <button class = "addToCart">Add to Cart</button> <!--Add to Cart: button-->
+                <p class="price ">169.00</p> <!--Price: int-->
+                <button class="addToCart">Add to Cart</button> <!--Add to Cart: button-->
             </div>
-            <div id = box2>
+            <div id=box2>
                 <a href="details.html"><img src="../images/vest 1.png"></a>
                 <p>basics. puffer vest</p>
                 <p>69.00</p>
-                
+
             </div>
-            <div id = box3>
+            <div id=box3>
                 <a href="details.html"><img src="../images/wool 1.png"></a>
                 <p>basics. wool jacket</p>
                 <p>169.00</p>
             </div>
-            <div id = box4>
+            <div id=box4>
                 <a href="details.html"><img src="../images/collar 1.png"></a>
                 <p>basics. collar jacket</p>
                 <p>109.00</p>
             </div>
         </div>
-        <div id = rec2>
+        <div id=rec2>
 
-            <div id = box1>
+            <div id=box1>
                 <a href="details.html"><img src="../images/coat 1.png"></a>
                 <p>basics. wool coat</p>
                 <p>159.00 USD</p>
             </div>
-            <div id = box2>
+            <div id=box2>
                 <a href="details.html"><img src="../images/scarf 1.png"></a>
                 <p>basics. scarf</p>
                 <p>35.00 USD</p>
             </div>
-            <div id = box3>
+            <div id=box3>
                 <a href="details.html"><img src="../images/beanie 1.png"></a>
                 <p>basics. beanie</p>
                 <p>22.00 USD</p>
             </div>
-            <div id = box4>
+            <div id=box4>
                 <a href="details.html"><img src="../images/boots 1.png"></a>
                 <p>basics. quilted boots</p>
                 <p>119.00 USD</p>

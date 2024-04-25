@@ -13,117 +13,96 @@
 <nav class="navigation">
     <div id="brand"><a href="homepage.html">basics.</a></div>
     <div class="products">
-        <a href="spring.html">Spring Collection</a>
-        <a href="products.html">Winter Collection</a>
-        <a href="reviews.html">Reviews</a>
+        <a href="products.html">Products</a>
         <a href="reach_out.html">Reach Out</a>
-        <a href="cart.html">Shopping Cart</a>
+        <a href="/login.ejs">Login</a>
     </div>
+    <a href="cart.html">Shopping Cart</a>
 </nav>
 
 <body>
-    <main id="backBox">
-        <section id="yourShoppingCart">
-            <h1> Shopping Cart </h1>
-        </section>
-
-        <section id="itemBackground">
-
-            <section id="itemSection">
-
-                <div class="cartItem">
+    <h1 id="title">SHOPPING CART</h1>
+    <div class="shopping-cart">
+        <div class="details">
+            <h1 id="product-text">product details</h1>
+            <div class="productDetails">
+                <div class="productImage">
+                    <img src="../images/beanie 1.png">
+                </div>
+                <div class="productInfo">
+                    <p class="name"> basic. beanie</p>
+                    <p id="size"> Size: M </p>
+                </div>
+                <div class="quantity">
+                    <br>
+                    <br>
+                    <button class="quantity-button">-</button> 
+                    <span>1</span> 
+                    <button class="quantity-button">+</button> 
+                </div>
+                <div class="productPrice">
+                    <p id="price">Price:</p>
+                    <p>$40</p>
+                </div>
+            </div>
+            <div class="productDetails">
+                <div class="productImage">
+                    <img src="../images/beanie 1.png">
+                </div>
+                <div class="productInfo">
+                    <p class="name"> basic. beanie</p>
+                    <p id="size"> Size: M </p>
                     
-                    <div class="imageItem">
-                        <img src="images/beanie 1.png" width="100%" height="100%">
-                    </div>
-
-                    <div class="itemInfo">
-                        <p class> basics. wrap denim short </p>
-                        <p> SIZE: M </p>
-                    </div>
-
-                    <div class="buttonSection">
-                        <button type="button" class="remAndQuan"> Quantity: 2 </button>
-                        <button type="button" class="remAndQuan"> Remove </button>
-                    </div>
                 </div>
-                <div class="cartItem">
+                <div class="quantity">
+                    <br>
+                    <br>
+                    <button class="quantity-button">-</button> 
+                    <span>1</span> 
+                    <button class="quantity-button">+</button> 
+                </div>
+                <div class="productPrice">
+                    <p id="price">Price:</p>
+                    <p>$40</p>
+                </div>
+            </div>
+            <div class="productDetails">
+                <div class="productImage">
+                    <img src="../images/beanie 1.png">
+                </div>
+                <div class="productInfo">
+                    <p class="name"> basic. beanie</p>
+                    <p id="size"> Size: M </p>
                     
-                    <div class="imageItem">
-                        <img src="images/beanie 1.png" width="100%" height="100%">
-                    </div>
-
-                    <div class="itemInfo">
-                        <p class> ITEM NAME: Beanie </p>
-                        <p> SIZE: Large </p>
-                        <p>$22.00</p>
-                    </div>
-
-                    <div class="buttonSection">
-                        <button type="button" class="remAndQuan"> Quantity: 2 </button>
-                        <button type="button" class="remAndQuan"> Remove </button>
-                    </div>
                 </div>
-                <div class="cartItem">
-                    
-                    <div class="imageItem">
-                        <img src="images/beanie 1.png" width="100%" height="100%">
-                    </div>
-
-                    <div class="itemInfo">
-                        <p class> ITEM NAME: Beanie </p>
-                        <p> SIZE: Large </p>
-                        <p>$22.00</p>
-                    </div>
-
-                    <div class="buttonSection">
-                        <button type="button" class="remAndQuan"> Quantity: 2 </button>
-                        <button type="button" class="remAndQuan"> Remove </button>
-                    </div>
+                <div class="quantity">
+                    <br>
+                    <br>
+                    <button class="quantity-button">-</button> 
+                    <span>1</span> 
+                    <button class="quantity-button">+</button> 
                 </div>
-                <div class="cartItem">
-                    
-                    <div class="imageItem">
-                        <img src="images/beanie 1.png" width="100%" height="100%">
-                    </div>
-
-                    <div class="itemInfo">
-                        <p class> ITEM NAME: Beanie </p>
-                        <p> SIZE: Large </p>
-                        <p>$22.00</p>
-                    </div>
-
-                    <div class="buttonSection">
-                        <button type="button" class="remAndQuan"> Quantity: 2 </button>
-                        <button type="button" class="remAndQuan"> Remove </button>
-                    </div>
+                <div class="productPrice">
+                    <p id="price">Price:</p>
+                    <p>$40</p>
                 </div>
-            </section>
-            <section id="orderSection">
-
-                <div id="top">
-                    <h2>Order Summary</h2>
-                </div>
-
-                <div id="orderSummaryInfo">
-                    <div>
-                        <p> basics. beanie: $22.00 </p>
-                        <p> basics. scarf: $35.00 </p>
-                        <hr>
-                        <p>Delivery Fee: $15.00</p>
-                        <p>Tax: $2.70</p>
-                        <hr>
-                        <p>Total: $74.70</p>
-
-                    </div>
-                </div>
-                <div class="bottom">
-                    <button type="button" class="checkoutButton"> Proceed To Checkout </button>
-                </div>
-            </section>
-        </section>
-        
-    </main>
+            </div>
+        </div>
+        <div class="order-summary">
+            <h1 id="summary"><u>ORDER SUMMARY</u></h1>
+            <div class="total">
+             <p><u> ITEMS</u>:3</p>
+             <p> <u>SHIPPING</u>: $10.00</p>
+             <p> <u>ADD PROMO CODE +</u></p>
+             <hr>
+             <p><u>TOTAL COST</u></p>
+             <p id="diplayTotalCost"></p>
+             <br>
+             <br>
+             <button class="checkout-button">Checkout</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

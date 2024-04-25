@@ -21,6 +21,10 @@ app.get("/", (req, res)=> {
     res.render("login");
 });
 
+app.get("/register", (req, res)=>{
+    res.render("register");
+});
+
 app.use(userRouter);
 const PORT = 3000;
 app.listen(PORT, () => {
