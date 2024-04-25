@@ -1,26 +1,21 @@
 "use strict";
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const bodyParser = require("body-parser");
+const userRouter = require("./routes/user.route");
+const path = require('path');
 
-const multer = require("multer")
-app.use(multer().none())
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.set("view engine", "ejs");
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(express.static(path.join(__dirname, 'public')));
 
-const cartRouter = require("./routes/cart.route")
-const productRouter = require("./routes/product.route");
-
-
-
-app.get('/', (req, res ) => {
-    res.json({message: "hello"});
+app.get("/", (req, res)=> {
+    res.render("login");
 });
 
-app.use("/cart", cartRouter)
-app.use("/product", productRouter);
+app.use(userRouter);
 
-
-const PORT = process.env.PORT || 8000;
+const PORT = 3000;
 app.listen(PORT, () => {
-  console.log("App listening at http://localhost:" + PORT);
+  console.log('Sever running on port ${PORT}');
 });

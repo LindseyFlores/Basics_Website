@@ -37,13 +37,8 @@ CREATE TABLE IF NOT EXISTS "products" (
 
 );
 CREATE TABLE IF NOT EXISTS "users" (
-        "user_id"   INTEGER NOT NULL UNIQUE, 
-        "user_record"   TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-        "user_name"    TEXT NOT NULL,
+        "user_id"   INTEGER PRIMARY KEY AUTOINCREMENT,
         "user_email"  TEXT NOT NULL UNIQUE,
         "user_password"  TEXT NOT NULL,
-        "user_type"  TEXT CHECK("user_type" IN ("admin","shopper")),
-        "cart"  INTEGER ,
-        PRIMARY KEY("user_id" AUTOINCREMENT),
-        FOREIGN KEY("cart") REFERENCES "carts" ("cart_id")
+        "user_record"   TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
 );
