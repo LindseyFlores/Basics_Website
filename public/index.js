@@ -49,3 +49,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const categorySelect = document.getElementById('category');
+    const productsContainer = document.getElementById('products-container'); // Corrected ID
+
+    categorySelect.addEventListener('change', function() {
+        const category = this.value;
+        fetch(`/products/category/${category}`)
+            .then(response => response.json())
+            .then(products => {
+                updateProductsDisplay(products);
+            })
+            .catch(error => console.error('Error fetching products:', error));
+    });
+
+    function updateProductsDisplay(products) {
+        // Clear previous products
+        productsContainer.innerHTML = '';
+
+        // Loop through each product and append to the container
+        products.forEach(product => {
+            const productDiv = document.createElement('div');
+            productDiv.classList.add('product-box');
+            productDiv.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <p class="name">${product.name}</p>
+                <p class="price">$${product.price.toFixed(2)}</p>
+            `;
+            productsContainer.appendChild(productDiv);
+        });
+    }
+});
