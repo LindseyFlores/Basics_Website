@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="login.js"></script>
+    <title>Login and Create Account</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/login" method="POST" id="loginForm">
+        <label for="loginEmail">Email:</label><br>
+        <input type="email" id="loginEmail" name="email" required><br>
+        <label for="loginPassword">Password:</label><br>
+        <input type="password" id="loginPassword" name="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <h1>Create Account</h1>
+    <form action="/register" method="POST" id="registerForm">
+        <label for="createName">Name:</label><br>
+        <input type="text" id="createName" name="name" required><br>
+        <label for="createEmail">Email:</label><br>
+        <input type="email" id="createEmail" name="email" required><br>
+        <label for="createPassword">Password:</label><br>
+        <input type="password" id="createPassword" name="password" required><br><br>
+        <button type="submit">Create Account</button>
+    </form>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla One">
     <link rel="stylesheet" href="home.css">
+    <script src="homepage.js"></script>
     <title>basics.</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,13 +14,12 @@
 <nav class="navigation">
     <div id="brand"><a href="homepage.html">basics.</a></div>
     <div class="products">
-        <a href="spring.html">Spring Collection</a>
-        <a href="products.html">Winter Collection</a>
-        <a href="reviews.html">Reviews</a>
+        <a href="products.html">Products</a>
         <a href="reach_out.html">Reach Out</a>
         <a href="cart.html">Shopping Cart</a>
-        <a href="login.html">LOGIN</a>
+        <a href="/auth/google">Login</a>
         <a href="bulkUpload.html">ADMIN UPLOAD</a>
+        <a href="/auth/login">Login</a>
     </div>
     <div class="search-bar">
         <input type="text" placeholder="Search...">
@@ -28,23 +28,19 @@
 </nav>
 
 <body>
-
-    <section id="carousel">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/B_cNEyiBplE?autoplay=1&mute=1"
-            frameborder="0" allowfullscreen></iframe>
-    </section>
-
-    <section id="trendy">
-
-        <div class="trendyPics">
-            <img src="../images/sPRING COLLECTION COMING SOON.png" height="100%" width="100%" class="hover-up-image" >
+  <div class="slider">
+    <div class="slides">   
+        <div class="slide first">
+            <img src="../images/carousel1.png">
         </div>
-
-        <div class="trendyPics">
-            <img src="../images/sPRING COLLECTION COMING SOON.png" height="100%" width="100%" class="hover-up-image" >
+        <div class="slide">
+            <img src="../images/carousel4.png">
         </div>
-    </section>
-
+        <div class="slide">
+            <img src="../images/carousel5.png">
+        </div>
+    </div>
+  </div>
 </body>
 
 <footer>
