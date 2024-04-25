@@ -1,5 +1,5 @@
-"use strict";
-const model = require("../models/user.model");
+// "use strict";
+// const model = require("../models/user.model");
 
 const registerUser = (req, res) => {
   const {name, email, password} = req.body;

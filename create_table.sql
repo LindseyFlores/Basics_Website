@@ -16,24 +16,14 @@ CREATE TABLE IF NOT EXISTS "cart" (
         FOREIGN KEY("user_id")REFERENCES "users"("user_id")
 
 );
-CREATE TABLE IF NOT EXISTS "categories" (
-        "category_id"   INTEGER NOT NULL UNIQUE, 
-        "name"   TEXT,
-        "display_order"    INTEGER,
-        PRIMARY KEY("category_id" AUTOINCREMENT)
-
-);
 CREATE TABLE IF NOT EXISTS "products" (
-        "product_id"   INTEGER NOT NULL UNIQUE, 
-        "name"   TEXT NOT NULL,
-        "description"    TEXT NOT NULL,
-        "image_url"  TEXT ,
-        "price"  REAL NOT NULL,
-        "other_details"  TEXT,
-        "category_id"  INTEGER NOT NULL,
-        "featured"  INTEGER,
-        PRIMARY KEY("product_id" AUTOINCREMENT),
-        FOREIGN KEY("category_id")REFERENCES "categories"("category_id")
+        "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+        "category" TEXT NOT NULL,
+        "name" TEXT NOT NULL,
+        "price" REAL NOT NULL,
+        "description" TEXT NOT NULL,
+        "image" TEXT NOT NULL,
+        "size"	TEXT NOT NULL
 
 );
 CREATE TABLE IF NOT EXISTS "users" (
