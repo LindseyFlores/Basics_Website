@@ -53,8 +53,6 @@ function checkoutCart(cartId) {
     });
 }
 
-
-
 module.exports = {
     createCart,
     addToCart,

@@ -40,6 +40,7 @@ async function checkoutCart(req, res) {
     }
 }
 
+
 module.exports = {
     addToCart,
     removeFromCart,

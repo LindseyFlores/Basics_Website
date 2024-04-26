@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const fetchButton = document.getElementById('fetch-product');
     const form = document.getElementById('editProductForm');
     const productIdField = document.getElementById('productId');
 
-    fetchButton.addEventListener('click', function() {
+    fetchButton.addEventListener('click', function () {
         const productId = document.getElementById('search').value;
         fetch(`/edit/products/${productId}`)
             .then(response => response.json())
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     });
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function (event) {
         event.preventDefault();
         const productData = {
             category: form.category.value,
@@ -39,21 +39,20 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             body: JSON.stringify(productData)
         })
-        .then(response => response.json())
-        .then(() => {
-            alert('Product updated successfully!');
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('Product updated successfully!');
-        });
+            .then(response => response.json())
+            .then(() => {
+                alert('Product updated successfully!');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Product updated successfully!');
+            });
     });
-});
-document.addEventListener('DOMContentLoaded', function() {
+    //product
     const categorySelect = document.getElementById('category');
     const productsContainer = document.getElementById('products-container'); // Corrected ID
 
-    categorySelect.addEventListener('change', function() {
+    categorySelect.addEventListener('change', function () {
         const category = this.value;
         fetch(`/products/category/${category}`)
             .then(response => response.json())
@@ -79,4 +78,56 @@ document.addEventListener('DOMContentLoaded', function() {
             productsContainer.appendChild(productDiv);
         });
     }
+    //detail.html
+    const addToCartButton = document.querySelector('.addToCart');
+    const sizeSelector = document.getElementById('sizes');
+    const quantityInput = document.getElementById('quantity-input');
+    const decreaseButton = document.querySelector('.decrease');
+    const increaseButton = document.querySelector('.increase');
+
+    //CartId and ProductId are hard coded for the ONE details page example
+    const cartId = 1;
+    const productId = 2;
+
+    decreaseButton.addEventListener('click', () => {
+        if (parseInt(quantityInput.value) > 1) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+        }
+    });
+
+    increaseButton.addEventListener('click', () => {
+        if (parseInt(quantityInput.value) < 100) {
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+    });
+
+    addToCartButton.addEventListener('click', function () {
+        const selectedSize = sizeSelector.value;
+        const quantity = parseInt(quantityInput.value);
+
+        const data = {
+            cartId: cartId,
+            productId: productId,
+            quantity: quantity,
+            size: selectedSize
+        };
+
+        fetch('/cart/add', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Product added to cart!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('Failed to add product to cart.');
+            });
+    });
 });
+//cart.html
