@@ -22,28 +22,29 @@
 
 <body>
     <h1 id="title">SHOPPING CART</h1>
-    <div class="shopping-cart">
+    <div class="shopping-cart"> <!--The area where the cart items will be displayed-->
         <div class="details">
             <h1 id="product-text">product details</h1>
             <div class="productDetails">
-                <div class="productImage">
+                <div class="productImage"> <!--Image displayed-->
                     <img src="../images/beanie 1.png">
                 </div>
                 <div class="productInfo">
-                    <p class="name"> basic. beanie</p>
-                    <p id="size"> Size: M </p>
+                    <p class="name"> basic. beanie</p><!--name of item-->
+                    <p id="size"> Size: M </p><!--size of item-->
                 </div>
                 <div class="quantity">
                     <br>
                     <br>
-                    <button class="quantity-button">-</button>
+                    <button class="quantity-button">-</button> <!--decrease amount of product (lowest will be 0)-->
                     <span>1</span>
-                    <button class="quantity-button">+</button>
+                    <button class="quantity-button">+</button> <!--increase amount of product-->
                 </div>
                 <div class="productPrice">
                     <p id="price">Price:</p>
-                    <p>$40</p>
+                    <p>$40</p> <!--price of invidual item-->
                 </div>
+                <button class="removeItem">Remove</button> <!--Remove Item Button-->
             </div>
             <div class="productDetails">
                 <div class="productImage">
@@ -65,6 +66,7 @@
                     <p id="price">Price:</p>
                     <p>$40</p>
                 </div>
+                <button class="removeItem">Remove</button>
             </div>
             <div class="productDetails">
                 <div class="productImage">
@@ -86,20 +88,22 @@
                     <p id="price">Price:</p>
                     <p>$40</p>
                 </div>
+                <button class="removeItem">Remove</button>
             </div>
         </div>
         <div class="order-summary">
             <h1 id="summary"><u>ORDER SUMMARY</u></h1>
             <div class="total">
                 <p><u> ITEMS</u>:3</p>
-                <p> <u>SHIPPING</u>: $10.00</p>
-                <p> <u>ADD PROMO CODE +</u></p>
+                <p> <u>SHIPPING</u>: $10.00</p> <!--this is a set price of $10.00-->
+                <p> <u>TAX</u>: $10.00</p> <!--This will be calculated based on the total cost and the tax rate which is 4.75%-->
+                <p> <u>ADD PROMO CODE +</u></p> <!--this is just for show-->
                 <hr>
                 <p><u>TOTAL COST</u></p>
-                <p id="diplayTotalCost"></p>
+                <p id="diplayTotalCost"></p> <!--display the total cost including the shipping and tax-->
                 <br>
                 <br>
-                <button class="checkout-button">Checkout</button>
+                <button class="checkout-button">Checkout</button><!--button that emptys the cart-->
             </div>
         </div>
     </div>

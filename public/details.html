@@ -17,15 +17,10 @@
         <a href="reviews.html">Reviews</a>
         <a href="reach_out.html">Reach Out</a>
     </div>
-    <div class="search-bar">
-        <input type="text" placeholder="Search...">
-        <button type="go">Submit</button>
-    </div>
     <a href="cart.html">Shopping Cart</a>
 </nav>
 
 <body>
-    <!--This provides detail for every single product-->
     <section id="product">
         <div id="boxes">
             <div id="box1">
@@ -42,31 +37,24 @@
                 </div>
             </div>
             <div id="box2">
-                <p>
-                    basics. puffer jacket
+                <p id="name"> basics. puffer jacket </p>
+                <p id="price"> 169.00 USD </p>
+                <p id="size"> Sizes: </p> <!--where user will be able ot choose the size of their product-->
+                <select id="sizes">
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                    <option value="xl">XL</option>
+                </select>
+                <p id="description">description of product</p>
                 </br>
-                    169.00 USD
-                </br>
-                </br>
-                    Color: Black
-                </br>
-                </br>
-
-                    Sizes:
-                    <select name="sizes" id="sizes">
-
-                        <option value="small">S</option>
-                        <option value="medium">M</option>
-                        <option value="large">L</option>
-                        <option value="xl">XL</option>
-                        </select>
-                </br>
-                 <button class = "addToCart">Add to Cart</button> <!--Add to Cart: button, this adds the product to the shopping cart-->
+                <button class="addToCart">Add to Cart</button> <!--Add to Cart: button, this adds the product to the shopping cart-->
                 </p>
             </div>
         </div>
-        
-          
+
+<script src="index.js"></script>
     </section>
 </body>
+
 </html>

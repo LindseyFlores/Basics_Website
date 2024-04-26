@@ -3,6 +3,7 @@ CREATE TABLE IF NOT EXISTS "cart_Products" (
         "cart_id"   INTEGER NOT NULL,
         "product_id"    INTEGER NOT NULL,
         "quantity"  INTEGER NOT NULL,
+        "size" TEXT NOT NULL,
         PRIMARY KEY("cart_product_id" AUTOINCREMENT),
         FOREIGN KEY("product_id")REFERENCES "products"("id"),
         FOREIGN KEY("cart_id")REFERENCES "cart"("cart_id")
