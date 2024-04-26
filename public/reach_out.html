@@ -2,44 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla One" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/login.css" />
-    <title>Reach Out To Us!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/login.css" />
+  <title>Reach Out To Us!</title>
 </head>
 <nav class="navigation">
-    <div id="brand"><a href="homepage.html">basics.</a></div>
-    <div class="products">
-      <a href="homepage.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="reach_out.html">Reach Out</a>
-      <a href="/">Login</a>
-    </div>
-    <a href="cart.html">Shopping Cart</a>
-  </nav>
+  <div id="brand"><a href="homepage.html">basics.</a></div>
+  <div class="products">
+    <a href="homepage.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="reach_out.html">Reach Out</a>
+    <a href="/">Login</a>
+  </div>
+  <a href="cart.html">Shopping Cart</a>
+</nav>
+
 <body>
-    <div class="forms">
+
+  <div class="forms">
     <div class="registerForm">
-        <h1>REACH OUT!</h1>
-        <form action="/reachout" method="POST" id="registerForm">
-            <i class="fa-solid fa-user"></i>
-            <input type="text" id="createName" name="name" placeholder="NAME" required><br>
-            <br>
-            <i class="fa-regular fa-envelope"></i>
-            <input type="email" id="createEmail" name="email" placeholder="EMAIL" required><br>
-            <br>
-            <i class="fa-solid fa-phone"></i>
-            <input type="phone" id="phone" name="phone" placeholder="PHONE" required><br><br>
-            <button type="submit">SUBMIT</button>
-        </form>
+      <h1>REACH OUT!</h1>
+      <form action="/reachout" method="POST" id="registerForm">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" id="createName" name="name" placeholder="NAME" required><br>
+        <br>
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" id="createEmail" name="email" placeholder="EMAIL" required><br>
+        <br>
+        <i class="fa-solid fa-phone"></i>
+        <input type="phone" id="phone" name="phone" placeholder="PHONE" required><br><br>
+        <button type="submit">SUBMIT</button>
+      </form>
     </div>
-    </div>
+    
+  <div id="map"></div>
+  </div>
+  <script>
+    function initMap() {
+      var location = { lat: 36.067158702950394, lng: -79.82241417679505 };
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 13,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAArTr34rjQwCcZskTucPil500XUOCHaSM&callback=initMap"></script>
 </body>
 
 </html>

@@ -36,13 +36,11 @@ body {
     padding-top: 14px;
   }
   .forms {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 20px;
+    padding: 60px;
+    margin-top: 80px; 
   }
   .loginForm {
     padding: 60px;
@@ -72,4 +70,9 @@ body {
   }
   #forgot {
     color: rgb(192, 192, 192);
+  }
+  #map{
+    height: 500px;
+    width: 100%;
+  
   }
