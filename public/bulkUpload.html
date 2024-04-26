@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulk Upload Page</title>
-    <link rel="stylesheet" href="bulkUpload.css"> 
+    <link rel="stylesheet" href="/public/styles/bulkUpload.css"> 
 </head>
 <nav class="dropdown">
     <button class="dropbtn"> Menu</button>
@@ -21,12 +21,15 @@
 <body>
     <main class="bulkMain">
         <h1>Upload your files here </h1>
+        <div id="upload">
         <form action="/upload/bulk" method="post" enctype="multipart/form-data">
             <label for="fileUpload"> Upload File:</label>
             <input type="file" id="fileUpload" name="fileUpload">
             <button type="submit">Upload</button>
         </form>
-        <p>id should be auto assigned The format should be:</p>
+    </div>
+        <div id = "exampleFormat">
+        <p>The format should be:</p>
         <pre>
             {
             "products":[
@@ -35,7 +38,7 @@
                         "name": "beanie",
                         "price": 20.00,
                         "description": "black beanie"
-                        "image":"THIS SHOULD BE A PATH FILE TO IMAGE",
+                        "image":"path/file/to/image",
                         "size": "one size"
                     },
                     {
@@ -43,13 +46,14 @@
                         "name": "jacket",
                         "price": 100.00,
                         "description": "black puffer jacket for winter"
-                        "image": "/Users/lindseyflores/Documents/basics_Website/images/beanie 1.png",
+                        "image": "../images/beanie 1.png",
                         "size": "M L"
                     }
                 ]
             }
             </pre>
         <p>Example file format: JSON </p>
+    </div>
     </main>
 </body>
 

@@ -68,5 +68,18 @@ body{
     justify-content: center;
     flex-direction: column;
     justify-content: space-between;
+}
 
+/*productEditPage*/
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#editProductForm{
+  display: flex;
+  flex-direction: column;
+  
 }
