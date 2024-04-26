@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const addToCartButton = document.querySelector('.addToCart');
     const sizeSelector = document.getElementById('sizes');
-    const quantityInput = document.getElementById('quantity-input');
+    const quantityInput = document.getElementById('quantity-button');
     const decreaseButton = document.querySelector('.decrease');
     const increaseButton = document.querySelector('.increase');
 
@@ -94,19 +94,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const productId = 20;
 
     //functionality for increase/decrease amount of items in cart
-    decreaseButton.addEventListener('click', () => {
+    decreaseButton.addEventListener('quantity-button', () => {
         if (parseInt(quantityInput.value) > 1) {
             quantityInput.value = parseInt(quantityInput.value) - 1;
         }
     });
 
-    increaseButton.addEventListener('click', () => {
+    increaseButton.addEventListener('quantity-button', () => {
         if (parseInt(quantityInput.value) < 100) {
             quantityInput.value = parseInt(quantityInput.value) + 1;
         }
     });
 
-    addToCartButton.addEventListener('click', function () {
+    addToCartButton.addEventListener('button', function () {
         const selectedSize = sizeSelector.value;
         const quantity = parseInt(quantityInput.value);
 
