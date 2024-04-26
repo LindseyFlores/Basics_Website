@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla One">
+    <link rel="stylesheet" href="cart.css">
+    <title> your cart </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" text="text/css" href="styles/cart.css" />
+    <script src="/scripts/index.js" defer></script>
+</head>
+
+<nav class="navigation">
+    <div id="brand"><a href="homepage.html">basics.</a></div>
+    <div class="products">
+        <a href="products.html">Products</a>
+        <a href="reach_out.html">Reach Out</a>
+        <a href="/login.ejs">Login</a>
+    </div>
+    <a href="cart.html">Shopping Cart</a>
+</nav>
+
+<body>
+    <h1 id="title">SHOPPING CART</h1>
+    <% cart.forEach(item=> { %>
+        <div class="shopping-cart"> <!--The area where the cart items will be displayed-->
+            <div class="details">
+                <h1 id="product-text">product details</h1>
+                <div class="productDetails">
+                    <div class="productImage"> <!--Image displayed-->
+                        <img src="<%= item.image %>">
+                    </div>
+                    <div class="productInfo">
+                        <p class="name">
+                            <%= item.name%>
+                        </p><!--name of item-->
+                        <p id="size">
+                            <%= item.size%>
+                        </p><!--size of item-->
+                    </div>
+                    <div class="quantity">
+                        <br>
+                        <br>
+                        <button class="quantity-button">-</button> <!--decrease amount of product (lowest will be 0)-->
+                        <span>"<%= item.quantity %>
+                        </span>
+                        <button class="quantity-button">+</button> <!--increase amount of product-->
+                    </div>
+                    <div class="productPrice">
+                        <p id="price">Price:</p>
+                        <p>$<%= item.price %>
+                        </p> <!--price of individual item-->
+                    </div>
+                </div>
+            </div> <!-- closing div for details -->
+        </div> <!-- closing div for shopping-cart -->
+    <% }); %> <!-- closing forEach loop -->
+            <div class="order-summary">
+                <h1 id="summary"><u>ORDER SUMMARY</u></h1>
+                <div class="total">
+                    <p><u> ITEMS</u>:3</p>
+                    <p> <u>SHIPPING</u>: $10.00</p> <!--this is a set price of $10.00-->
+                    <p> <u>TAX</u>: $10.00</p>
+                    <!--This will be calculated based on the total cost and the tax rate which is 4.75%-->
+                    <p> <u>ADD PROMO CODE +</u></p> <!--this is just for show-->
+                    <hr>
+                    <p><u>TOTAL COST</u></p>
+                    <p id="diplayTotalCost"></p> <!--display the total cost inclu-->
+                    <br>
+                    <br>
+                    <button class="checkout-button">Checkout</button><!--button that emptys the cart-->
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
