@@ -3,6 +3,38 @@ body {
     font-family:"Barlow Semi Condensed", sans-serif;
     color: balck;
   }
+  body {
+    background-color: black;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+  
+  .navigation {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navigation a {
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .navigation a:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  #brand {
+    font-family: "Fjalla One", sans-serif;
+    padding-top: 14px;
+  }
+  
+  .products {
+    padding-bottom: 14px;
+    padding-top: 14px;
+  }
   .forms {
     position: absolute;
     top: 50%;

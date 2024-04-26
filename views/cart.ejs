@@ -29,34 +29,33 @@
             <div class="details">
                 <h1 id="product-text">product details</h1>
                 <div class="productDetails">
-                    <div class="productImage"> <!--Image displayed-->
+                    <div class="productImage"> 
                         <img src="<%= item.image %>">
                     </div>
                     <div class="productInfo">
                         <p class="name">
                             <%= item.name%>
-                        </p><!--name of item-->
+                        </p>
                         <p id="size">
                             <%= item.size%>
-                        </p><!--size of item-->
+                        </p>
                     </div>
                     <div class="quantity">
                         <br>
                         <br>
-                        <button class="quantity-button">-</button> <!--decrease amount of product (lowest will be 0)-->
+                        <button class="quantity-button">-</button> 
                         <span>"<%= item.quantity %>
                         </span>
-                        <button class="quantity-button">+</button> <!--increase amount of product-->
+                        <button class="quantity-button">+</button> 
                     </div>
                     <div class="productPrice">
                         <p id="price">Price:</p>
                         <p>$<%= item.price %>
-                        </p> <!--price of individual item-->
+                        </p> 
                     </div>
                 </div>
-            </div> <!-- closing div for details -->
-        </div> <!-- closing div for shopping-cart -->
-    <% }); %> <!-- closing forEach loop -->
+            </div> 
+        </div> 
             <div class="order-summary">
                 <h1 id="summary"><u>ORDER SUMMARY</u></h1>
                 <div class="total">

@@ -35,6 +35,16 @@ app.get("/register", (req, res) => {
     res.render("register");
 });
 
+app.post('/logout', function(req, res) {
+    req.session.destroy(function(err) {
+        if(err) {
+            console.error(err);
+        } else {
+            res.redirect('/login');
+        }
+    });
+});
+
 // Start server
 const PORT = 3000;
 app.listen(PORT, () => {

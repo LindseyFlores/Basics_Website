@@ -93,11 +93,88 @@ body {
   height: 70%;
   width: 30%;
   color: black;
-  font-size: 35pt;
+  font-size: 14pt;
 }
 #product #boxes #box2 p {
   padding: 30px;
 }
 #cart {
   float: inline-end;
+}
+footer {
+  background-color: white;
+  color: black;
+  font-size: 12pt;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+h4 {
+  color: black;
+  text-align: center;
+}
+.column1 {
+  padding: 14px;
+}
+.column2 {
+  padding: 14px;
+}
+.column3 {
+  padding: 70px;
+  font-family: monospace;
+}
+.quantity {
+  width: 20%;
+  height: 120px;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.quantity-button {
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.select-container {
+  position: relative;
+  display: inline-block;
+  width: 150px; 
+}
+
+
+select {
+  width: 100%;
+  padding: 10px;
+  appearance: none; 
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.select-container::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+
+option {
+  background-color: #fff;
+  color: #333;
+}
+#sizes{
+  margin-left: 20px;
 }
