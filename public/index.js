@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fetch(`/edit/products/${productId}`)
             .then(response => response.json())
             .then(product => {
-                // Set the form fields with the product data
+                //form fields with the product data
                 productIdField.value = product.id;
                 document.getElementById('category').value = product.category;
                 document.getElementById('name').value = product.name;
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //CartId and ProductId are hard coded for the ONE details page example
     const cartId = 1;
-    const productId = 2;
+    const productId = 20;
 
     //functionality for increase/decrease amount of items in cart
     decreaseButton.addEventListener('click', () => {
@@ -135,4 +135,4 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 });
-//cart.html
+//cart.html 
