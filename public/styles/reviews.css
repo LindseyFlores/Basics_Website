@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.navigation {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation a {
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: black;
+    background-color: white;
+}
+
+#brand {
+    font-family: "Fjalla One", sans-serif;
+    padding-top: 14px;
+}
+
+.products {
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+
+.container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .reviews {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+  }
