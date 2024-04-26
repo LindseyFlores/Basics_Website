@@ -40,6 +40,7 @@ body {
     flex-direction: column;
     height: 900px;
     color: white;
+    margin-bottom: 70px;
 }
 #products #rec1{
     height: 450px;
@@ -149,3 +150,26 @@ body {
     background-color: black;
     color: white;
 }
+footer {
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  h4 {
+    color: black;
+    text-align: center;
+  }
+  .column1 {
+    padding: 14px;
+  }
+  .column2 {
+    padding: 14px;
+  }
+  .column3 {
+    padding: 70px;
+    font-family: monospace;
+  }
+  

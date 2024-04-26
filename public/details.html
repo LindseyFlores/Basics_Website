@@ -13,12 +13,14 @@
 <nav class="navigation">
     <div id="brand"><a href="homepage.html">basics.</a></div>
     <div class="products">
-        <a href="products.html">Our products</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="reach_out.html">Reach Out</a>
+      <a href="homepage.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="reach_out.html">Reach Out</a>
+      <a href="views/login">Login</a>
     </div>
     <a href="cart.html">Shopping Cart</a>
-</nav>
+  </nav>
 
 <body>
     <section id="product">
@@ -38,20 +40,19 @@
             </div>
             <div id="box2">
                 <p id="name"> basics. puffer jacket </p>
-                <p id="price"> 169.00 USD </p>
-                <p id="size"> Sizes: </p> <!--where user will be able ot choose the size of their product-->
+                <p id="price">Price: 169.00 USD </p>
                 <select id="sizes">
-                    <option value="small">S</option>
-                    <option value="medium">M</option>
-                    <option value="large">L</option>
-                    <option value="xl">XL</option>
+                    <option value="small">Size: S</option>
+                    <option value="medium">Size: M</option>
+                    <option value="large">Size: L</option>
+                    <option value="xl">Size: XL</option>
                 </select>
                 <p id="description">description of product</p>
                 <p id="quantity">Quantity:</p>
-                <div class="quantity-controls">
-                    <button class="decrease">-</button>
-                    <input type="text" id="quantity-input" value="1" readonly>
-                    <button class="increase">+</button>
+                <div class="quantity">
+                    <button class="quantity-button">-</button>
+                    <span>1</span>
+                    <button class="quantity-button">+</button>
                 </div>
 
                 </br>
@@ -62,5 +63,29 @@
         <script src="index.js"></script>
     </section>
 </body>
-
+<footer>
+    <div class="column1">
+      <h4>Customer Service</h4>
+      <pre>
+              Contact Us
+              Live Chat
+              Customer Support
+              Return & Exchange Policy
+              Order Status
+          </pre>
+    </div>
+    <div class="column2">
+      <h4>Brand</h4>
+      <pre>
+              About Us
+              Protect the brand
+              Satisfaction
+              Reviews
+              Collaborate
+        </pre>
+    </div>
+    <div class="column3">
+      <p>&copy; Copyright 2024</p>
+    </div>
+  </footer>
 </html>
