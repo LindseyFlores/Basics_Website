@@ -7,7 +7,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.set('view engine', 'ejs')
-//app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Importing routes
@@ -29,7 +28,6 @@ app.get("/", (req, res) => {
 app.get("/register", (req, res) => {
     res.render("register");
 });
-//render for products?
 
 app.post('/logout', function(req, res) {
     req.session.destroy(function(err) {
