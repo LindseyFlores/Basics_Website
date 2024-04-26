@@ -24,8 +24,8 @@ const userRouter = require("./routes/user.route");
 app.use('/upload', uploadRoute);
 app.use('/edit', adminEditRoute);
 app.use('/products', productRoute);
-// app.use('/cart', cartRoute);
-// app.use(userRouter);
+app.use('/cart', cartRoute);
+app.use(userRouter);
 
 // Root routes
 app.get("/", (req, res) => {
