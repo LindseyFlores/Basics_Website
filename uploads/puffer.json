@@ -1,0 +1,13 @@
+{
+    "products": [
+        {
+            "category": "winter",
+            "name": "basics. black puffer jacket",
+            "price": 169.00,
+            "description": "a sleek, quilted outerwear essential, filled with cozy insulation for warmth and comfort in cold weather.",
+            "image": "../images/puffer 1.png",
+            "size": "S M L XL"
+
+        }
+    ]
+}

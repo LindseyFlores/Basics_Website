@@ -1,0 +1,136 @@
+{
+    "products": [
+        {
+            "category": "summer",
+            "name": "basics. belted fitted dress",
+            "price": 49.00,
+            "description": "Fitted mini dress with a squared neckline and buttoned front pockets.",
+            "image": "../images/dress 1.png",
+            "size": "S M L XL"
+
+        },
+        {
+            "category": "summer",
+            "name": "basics. wrap denim skort",
+            "price": 39.00,
+            "description": "A high waisted skort with a washed effect, designed with front and back pockets.",
+            "image": "../images/skort 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "summer",
+            "name": "basics. embroided top",
+            "price": 35.00,
+            "description": "V-neck embroided top, perfect for a casual yet sophisticated look.",
+            "image": "../images/top 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "summer",
+            "name": "basics. asymmetric swimsuit",
+            "price": 49.00,
+            "description": "Swimsuit with an asymmetric neckline and embroided strap.",
+            "image": "../images/asymmetric swimsuit 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "summer",
+            "name": "basics. textured t-shirt",
+            "price": 39.00,
+            "description": "A minimalist, yet comfort for all-day wear t-shirt with a round neckline.",
+            "image": "../images/tshirt 1.png",
+            "size": "S M L XL"
+
+        },
+        {
+            "category": "summer",
+            "name": "basics. linen shorts",
+            "price": 49.00,
+            "description": "Fresh and verastile linen fabric shorts, created for comfort and ease of movement.",
+            "image": "../images/shorts 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "summer",
+            "name": "basics. linen shirt",
+            "price": 49.00,
+            "description": "Relax and fresh fit linen shirt, designed with a spread collar and short sleeves",
+            "image": "../images/linen shirt 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "summer",
+            "name": "basics. structured swimsuit",
+            "price": 45.00,
+            "description": "Sophisticated and elegant swimming trunks, perfect for hanging out by the pool or strolling along the beach. ",
+            "image": "../images/structured swimsuit 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "all",
+            "name": "basics. belted fitted dress",
+            "price": 49.00,
+            "description": "Fitted mini dress with a squared neckline and buttoned front pockets.",
+            "image": "../images/dress 1.png",
+            "size": "S M L XL"
+
+        },
+        {
+            "category": "all",
+            "name": "basics. wrap denim skort",
+            "price": 39.00,
+            "description": "A high waisted skort with a washed effect, designed with front and back pockets.",
+            "image": "../images/skort 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "all",
+            "name": "basics. embroided top",
+            "price": 35.00,
+            "description": "V-neck embroided top, perfect for a casual yet sophisticated look.",
+            "image": "../images/top 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "all",
+            "name": "basics. asymmetric swimsuit",
+            "price": 49.00,
+            "description": "Swimsuit with an asymmetric neckline and embroided strap.",
+            "image": "../images/asymmetric swimsuit 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "all",
+            "name": "basics. textured t-shirt",
+            "price": 39.00,
+            "description": "A minimalist, yet comfort for all-day wear t-shirt with a round neckline.",
+            "image": "../images/tshirt 1.png",
+            "size": "S M L XL"
+
+        },
+        {
+            "category": "all",
+            "name": "basics. linen shorts",
+            "price": 49.00,
+            "description": "Fresh and verastile linen fabric shorts, created for comfort and ease of movement.",
+            "image": "../images/shorts 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "all",
+            "name": "basics. linen shirt",
+            "price": 49.00,
+            "description": "Relax and fresh fit linen shirt, designed with a spread collar and short sleeves",
+            "image": "../images/linen shirt 1.png",
+            "size" : "S M L XL"
+        },
+        {
+            "category": "all",
+            "name": "basics. structured swimsuit",
+            "price": 45.00,
+            "description": "Sophisticated and elegant swimming trunks, perfect for hanging out by the pool or strolling along the beach. ",
+            "image": "../images/structured swimsuit 1.png",
+            "size" : "S M L XL"
+        }
+    ]
+}
